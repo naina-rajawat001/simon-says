@@ -9,6 +9,7 @@ let allDiv = document.getElementsByClassName("div")
 let userScore = document.getElementById("user-score")
 let highScore = document.getElementById("highest-score")
 let winning = document.getElementById("winning")
+let scoreBoard = document.getElementById("score-board")
 
 let congrats = ["Good start! Try again? 🔁🙂",
 "Warm-up done! Another round? 🎮✨",
@@ -103,8 +104,14 @@ function verify() {
 
 
 function showScore() {
-    if (count > 0) {
-
+    scoreBoard.style.display = "block"
+    if (count > 0) {   
+    }
+    else if (count> newHighScore) {
+        winning.innerText = highScore[Math.floor(Math.random()*highScore.length)]
+    }
+    else if (count == 0) {
+        winning.innerText = "OOPS, GAME OVER!!!. TRY AGAIN "
     }
 }
 
