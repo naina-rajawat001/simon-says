@@ -20,6 +20,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 h2 {
@@ -40,7 +41,7 @@ section {
     
 }
 
-div {
+.div {
     width: 180px;
     height: 180px;
     background-color: black;
@@ -49,21 +50,28 @@ div {
 
 #box1 {
     background-color: #bf1a1a;
+    box-shadow: -5px -5px 10px #5a0e0e;
 }
 
 #box2 {
     background-color: #628141;
+    box-shadow: -5px -5px 10px #334222;
 }
 
 #box3 {
     background-color: #4A70A9;
+    box-shadow: -5px -5px 10px #22334d;
 }
 
 #box4 {
     background-color: #F5C857;
+    box-shadow: -5px -5px 10px #947832;
 }
 
 #level {
+    width: 180px;
+    height: 180px;
+    background-color: black;
     border-radius: 50%;
     position: fixed;
     left: 0;
@@ -94,3 +102,37 @@ button {
 .opacity {
     opacity: 0.5;
 }
+
+
+#like-box {
+    width: 120px;
+    height: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fa-heart {
+    font-size: 25px;
+    color: rgb(206, 42, 42);
+}
+
+#score-board {
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(182, 208, 245);
+    border: 5px solid #7d91b0;
+    box-shadow: 0 0 50px #424040;
+}
+
+
+
+

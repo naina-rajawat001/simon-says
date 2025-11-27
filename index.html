@@ -6,12 +6,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Simon Says Game</title>
 </head>
 <body>
     <main>
         <h2>Simon Says Game</h2>
+        <span id="like-box">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i> 
+        </span>
         <section>
         <div id="box1" class = "div"></div>
         <div id="box2" class = "div"></div>
@@ -19,8 +25,16 @@
         <div id="box4" class = "div"></div>
         <div id = "level">0</div>
         </section>
+        <div id="score-board">
+            <h1 id="winning"></h1>
+            
+            <h2>Your score <span id="user-score">0</span></h2>
+            <h3>Highest Score <span id="highest-score">0</span></h3>
+            <button>Play Again</button>
+        </div>
+        
         <button class="start-btn" id="start-btn" onclick="startGame()">Start Game</button>
     </main>
-    <script src="main.js"> </script>
+    <script src="3_attemp.js"> </script>
 </body>
 </html>
