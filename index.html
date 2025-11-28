@@ -12,11 +12,11 @@
 </head>
 <body>
     <main>
-        <h2>Simon Says Game</h2>
+        <h2 class="heading">Simon Says Game</h2>
         <span id="like-box">
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-heart"></i> 
+            <i class="fa-solid fa-heart heart1"></i>
+            <i class="fa-solid fa-heart heart2"></i>
+            <i class="fa-solid fa-heart heart3"></i> 
         </span>
         <section>
         <div id="box1" class = "div"></div>
@@ -26,11 +26,10 @@
         <div id = "level">0</div>
         </section>
         <div id="score-board" style="display: none;">
-            <h1 id="winning"></h1>
-            
+            <button class="cancel" id="cancel"><i class="fa-regular fa-circle-xmark"></i></button>
             <h2>Your score <span id="user-score">0</span></h2>
-            <h3>Highest Score <span id="highest-score">0</span></h3>
-            <button>Play Again</button>
+            <h1 id="winning"></h1>
+            <button id="again">Play Again</button>
         </div>
         
         <button class="start-btn" id="start-btn" onclick="startGame()">Start Game</button>

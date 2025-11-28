@@ -23,7 +23,7 @@ main {
     gap: 50px;
 }
 
-h2 {
+.heading {
     margin: 10px ; 
     font-size: 36px;
     height: 20%;
@@ -127,10 +127,34 @@ button {
 #score-board {
     position: absolute;
     width: 50%;
-    height: 500px;
+    height: fit-content;
+    padding: 20px;
     background-color: rgb(182, 208, 245);
     border: 5px solid #7d91b0;
     box-shadow: 0 0 50px #424040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.cancel {
+    background-color: transparent;
+    color: #495567;
+    font-size: 25px;
+    position: absolute;
+    right: -20px;
+    top: -10px
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#again {
+    margin: 10px
 }
 
 
