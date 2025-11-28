@@ -24,7 +24,6 @@ let lifeline = 3;
 
 
 function startGame() {
-    lifeline = 3
     if (sequenceArray.length < 1) {
         sequenceArray.push(randomNumber())
         setTimeout( () => {
@@ -110,8 +109,15 @@ function lifelineReducer () {
         if (lifeline == 0) {
             scoreBoard.style.display = "block"
             showScore()
+            for(let i = 0; i < lifes.length; i++) {
+                lifes[i].classList.remove("fa-regular")
+                lifes[i].classList.add("fa-solid")
+            }
+            lifeline = 3
+            
         }
     }
+    
 
     
 } 
@@ -182,7 +188,11 @@ function showScore() {
 
 playAgainBtn.addEventListener("click",() => {
     count = 0
+    sequenceArray = []
+    scoreDiv.innerText = count
+    
     startGame()
+    scoreBoard.style.display = "none";
 })
 
 cancelBtn.addEventListener("click", ()=> {
